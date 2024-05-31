@@ -10,7 +10,7 @@ from django.utils.translation import gettext_lazy as _
 
 
 class DueDateMixin(models.Model):
-    due_date = models.DateField(
+    due_date = models.DateTimeField(
         blank=True, null=True, default=None, verbose_name=_('due date'),
     )
     due_date_reason = models.TextField(
